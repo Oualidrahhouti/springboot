@@ -29,11 +29,11 @@ public class City {
 
     public void setCity(String city) { this.city = city; }
 
-    public Long getCountry_id() { return this.country_id; }
+    public Long getCountryId() { return this.country_id; }
 
-    public void setCountry_id(Long country_id) { this.country_id = country_id; }
+    public void setCountryId(Long country_id) { this.country_id = country_id; }
 
-    public LocalDateTime getLast_update() { return this.last_update; }
+    public LocalDateTime getLastUpdate() { return this.last_update; }
 
-    public void setLast_update(LocalDateTime last_update) { this.last_update = last_update; }
+    public void setLastUpdate(LocalDateTime last_update) { this.last_update = last_update; }
 }
