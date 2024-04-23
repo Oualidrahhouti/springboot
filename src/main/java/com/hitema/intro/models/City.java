@@ -15,8 +15,9 @@ public class City {
     @Column(name = "city")
     private String city;
 
+    @ManyToOne(fetch = FetchType.EAGER)
     @Column(name="country_id")
-    private Long country_id;
+    private Country country;
 
     @Column(name="last_update")
     private LocalDateTime last_update;
@@ -29,9 +30,9 @@ public class City {
 
     public void setCity(String city) { this.city = city; }
 
-    public Long getCountryId() { return this.country_id; }
+    public Country getCountry() { return this.country; }
 
-    public void setCountryId(Long country_id) { this.country_id = country_id; }
+    public void setCountry(Country country) { this.country = country; }
 
     public LocalDateTime getLastUpdate() { return this.last_update; }
 
