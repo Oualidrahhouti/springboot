@@ -22,6 +22,9 @@ public class City {
     @Column(name="last_update")
     private LocalDateTime last_update;
 
+    @Column(name = "capital") // Added new column for capital
+    private boolean capital;
+
     public Long getId() { return this.id; };
 
     public void setId(Long id) { this.id = id; }
@@ -37,4 +40,9 @@ public class City {
     public LocalDateTime getLastUpdate() { return this.last_update; }
 
     public void setLastUpdate(LocalDateTime last_update) { this.last_update = last_update; }
+
+    public boolean isCapital() { return this.capital; } // Getter for capital
+
+    public void setCapital(boolean capital) { this.capital = capital; } // Setter for capital
+
 }

@@ -12,5 +12,6 @@ public interface CityService {
     public City update(City country);
     public Boolean delete(Long id);
     public List<City> readAll();
+    public List<City> readAllCapitals();
 
 }

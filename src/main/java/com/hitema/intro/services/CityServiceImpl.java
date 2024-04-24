@@ -44,4 +44,8 @@ public class CityServiceImpl implements CityService {
         return cityRepository.findAll();
     }
 
+    @Override
+    public List<City> readAllCapitals(){
+        return cityRepository.findAll();
+    }
 }
